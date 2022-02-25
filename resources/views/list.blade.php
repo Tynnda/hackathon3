@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     @include('header')
-    <h1>Search</h1>
+    <h2>Search</h2>
     <form action="/search" method="get">
         <input type="text" name="search" id="search" placeholder="name of a movie">
         <button type="submit">search</button>
@@ -17,7 +18,7 @@
     @foreach ($results as $result)
     <ul>
         <li>
-            <a href="/search/list/details/{{$result->id}}">{{$result->first_name}} {{$result->surname}}</a>
+            <a class="person_detail" href="/search/list/details/{{$result->id}}">{{$result->first_name}} {{$result->surname}}</a>
 
         </li>
     </ul>

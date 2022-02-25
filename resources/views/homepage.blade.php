@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     @include('header')
-    <a href="/search">WELCOME</a>
+    <div class="welcome">
+        <h1>VETERINARY CLINIC</h1>
+    </div>
+
     
 </body>
 </html>

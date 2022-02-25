@@ -23,3 +23,4 @@ Route::post('/search', 'App\Http\Controllers\VeterinaryController@store');
 Route::get('edit/{id}', 'App\Http\Controllers\VeterinaryController@edit');
 Route::put('update/{id}', 'App\Http\Controllers\VeterinaryController@update');
 Route::delete('/{id}', 'App\Http\Controllers\VeterinaryController@delete');
+// Route::delete('/{id}', 'App\Http\Controllers\VeterinaryController@customer');
