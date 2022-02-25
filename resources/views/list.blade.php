@@ -11,7 +11,7 @@
     @include('header')
     <h2>Search</h2>
     <form action="/search" method="get">
-        <input type="text" name="search" id="search" placeholder="name of a movie">
+        <input type="text" name="search" id="search">
         <button type="submit">search</button>
     </form>
     <br>

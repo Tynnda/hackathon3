@@ -10,7 +10,8 @@
 <body>
     @include('header')
     <div class="welcome">
-        <h1>VETERINARY CLINIC</h1>
+        <h1>VETERINARY   K&M</h1>
+
     </div>
 
     

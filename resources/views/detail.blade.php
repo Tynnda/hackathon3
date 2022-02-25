@@ -16,16 +16,20 @@
             <p><strong>email: </strong><span>{{$details->email}}</span></p>
             <p><strong>address: </strong><span>{{$details->address}}</span></p>
             <br>
-            <a href="{{ url('edit/' . $details->id)}}">EDIT</a>
-            <form action="{{ action('App\Http\Controllers\VeterinaryController@delete', ['id' => $details->id]) }}" method ="post">
-                
-                @csrf
-        
-                @method('DELETE')
-                <input type="submit" value="delete">
-        
-        
-            </form>
+<div class="buttons">
+                <a class="edit" href="{{ url('edit/' . $details->id)}}">EDIT</a>
+                <br>
+                <br>
+                <form action="{{ action('App\Http\Controllers\VeterinaryController@delete', ['id' => $details->id]) }}" method ="post">
+                    
+                    @csrf
+            
+                    @method('DELETE')
+                    <input type="submit" value="delete">
+            
+            
+                </form>
+</div>
      </div>
     
     
@@ -46,7 +50,7 @@
         <div class="pet_info">
             <h3><strong>Pet name: </strong><span>{{$animal->name}}</span></h3>
                 <p><strong>Age: </strong><span>{{$animal->age}}</span></p>
-                <p><strong>Weight: </strong><span>{{$animal->weight}}</span></p>
+                <p><strong>Weight: </strong><span>{{$animal->weight}} pounds</span></p>
                 <p><strong>Breed: </strong><span>{{$animal->breed}}</span></p>
                 <p><strong>Species: </strong><span>{{$animal->species}}</span></p>
         </div>
