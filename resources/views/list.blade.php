@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header')
     <h1>Search</h1>
     <form action="/search" method="get">
         <input type="text" name="search" id="search" placeholder="name of a movie">

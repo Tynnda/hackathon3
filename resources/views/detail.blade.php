@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header')
     <h1>{{$details->first_name}} {{$details->surname}}</h1>
     <p><strong>phone: </strong><span>{{$details->phone}}</span></p>
     <p><strong>email: </strong><span>{{$details->email}}</span></p>

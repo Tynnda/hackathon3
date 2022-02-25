@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header')
 
     <h1>Registration</h1>
     <form action="{{ action('App\Http\Controllers\VeterinaryController@store') }}" method="post">

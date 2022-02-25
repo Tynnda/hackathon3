@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header')
     <a href="/search">WELCOME</a>
     
 </body>

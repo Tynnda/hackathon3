@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header')
     <h1>Edit customer</h1>
     <form action="{{ action('App\Http\Controllers\VeterinaryController@update', ['id' => $details->id]) }}" method="POST">
         
